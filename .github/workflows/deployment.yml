@@ -34,7 +34,7 @@ jobs:
         run: npm run lint
   build:
     needs: [lint, test]
-    stretagy:
+    strategy:
       matrix:
         node-version: [14,16]
         on: [ubuntu-latest, windows-latest]
