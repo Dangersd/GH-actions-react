@@ -42,7 +42,7 @@ jobs:
     steps: ${{ matrix.os }}
       - name: Get repository code
         uses: actions/checkout@v3
-      - name: Install nodeJs
+      - name: Install node JS
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
