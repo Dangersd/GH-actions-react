@@ -37,7 +37,7 @@ jobs:
     stratagy:
       matrix:
         node-version: [14,16]
-        on: [ubuntu-latest, windows-latest, macos-latest]
+        on: [ubuntu-latest, windows-latest]
     runs-on: ubuntu-latest
     steps: ${{ matrix.os }}
       - name: Get repository code
